@@ -16,12 +16,12 @@ def crPackage(){
 }
 
 
-def testUni{
+def testUni(){
     def mavenCommand = "mvn test"
     sh "${mavenCommand}"
 }
 
-def jacoco{
+def jacoco(){
     def mavenCommand = "mvn clean test jacoco:report"
     sh "${mavenCommand}"
 }
